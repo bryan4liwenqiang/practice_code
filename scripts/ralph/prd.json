@@ -1,0 +1,87 @@
+{
+  "projectName": "Multi-Device Todo Sync with Authentication",
+  "branchName": "ralph/authentication",
+  "description": "Add email/password and social authentication to enable multi-device todo sync",
+  "userStories": [
+    {
+      "id": "AUTH-001",
+      "title": "Setup authentication database schema and user model",
+      "description": "Create database tables for users, sessions, and password reset tokens with required fields and indexes",
+      "priority": 1,
+      "passes": false,
+      "estimatedPoints": 5
+    },
+    {
+      "id": "AUTH-002",
+      "title": "Implement email/password signup endpoint",
+      "description": "Create POST /auth/signup endpoint with email validation, password hashing (bcrypt), and account creation",
+      "priority": 2,
+      "passes": false,
+      "estimatedPoints": 5
+    },
+    {
+      "id": "AUTH-003",
+      "title": "Implement email/password login endpoint",
+      "description": "Create POST /auth/login endpoint with email/password validation and JWT session token generation",
+      "priority": 3,
+      "passes": false,
+      "estimatedPoints": 5
+    },
+    {
+      "id": "AUTH-004",
+      "title": "Add authentication middleware and protected routes",
+      "description": "Create middleware to validate JWT tokens and protect todo routes from unauthenticated access",
+      "priority": 4,
+      "passes": false,
+      "estimatedPoints": 3
+    },
+    {
+      "id": "AUTH-005",
+      "title": "Implement logout endpoint",
+      "description": "Create POST /auth/logout endpoint to invalidate sessions and clear tokens",
+      "priority": 5,
+      "passes": false,
+      "estimatedPoints": 2
+    },
+    {
+      "id": "AUTH-006",
+      "title": "Build signup UI form",
+      "description": "Create signup page with email, password, and confirmation fields with client-side validation",
+      "priority": 6,
+      "passes": false,
+      "estimatedPoints": 5
+    },
+    {
+      "id": "AUTH-007",
+      "title": "Build login UI form",
+      "description": "Create login page with email and password fields with error handling",
+      "priority": 7,
+      "passes": false,
+      "estimatedPoints": 3
+    },
+    {
+      "id": "AUTH-008",
+      "title": "Implement password reset email flow",
+      "description": "Create password reset request and token validation with email notification",
+      "priority": 8,
+      "passes": false,
+      "estimatedPoints": 5
+    },
+    {
+      "id": "AUTH-009",
+      "title": "Add OAuth2 Google integration",
+      "description": "Implement Google OAuth2 sign-up and login flow with account creation",
+      "priority": 9,
+      "passes": false,
+      "estimatedPoints": 8
+    },
+    {
+      "id": "AUTH-010",
+      "title": "Add account lockout protection",
+      "description": "Implement login attempt tracking and temporary account lockout after 5 failed attempts",
+      "priority": 10,
+      "passes": false,
+      "estimatedPoints": 4
+    }
+  ]
+}
